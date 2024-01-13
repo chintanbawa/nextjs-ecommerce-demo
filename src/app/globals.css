@@ -3,25 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-text-primary: 72, 75, 106;
+  --color-text-secondary: 210, 211, 219;
+  --color-text-inverted: 250, 250, 250;
+  --color-primary: 250, 250, 250;
+  --color-secondary-1: 72, 75, 106;
+  --color-secondary-2: 147, 148, 165;
+  --color-inverted: 228, 229, 241;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-text-primary: 185, 185, 185;
+    --color-text-secondary: 51, 51, 51;
+    --color-text-inverted: 0, 0, 0;
+    --color-primary: 0, 0, 0;
+    --color-secondary-1: 185, 185, 185;
+    --color-secondary-2: 225, 225, 225;
+    --color-inverted: 42, 39, 42;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--color-primary));
 }
