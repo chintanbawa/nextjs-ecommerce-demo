@@ -1,3 +1,5 @@
+![a27b5d13-6e46-41b2-8087-bbb94f041f20](https://github.com/chintanbawa/nextjs-ecommerce-demo/assets/33692327/5ab3ea0a-271b-425e-8a08-084473d78add)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
