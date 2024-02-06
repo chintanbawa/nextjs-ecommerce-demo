@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.light {
   --color-text-primary: 72, 75, 106;
   --color-text-secondary: 210, 211, 219;
   --color-text-inverted: 250, 250, 250;
@@ -11,17 +11,32 @@
   --color-secondary-2: 147, 148, 165;
   --color-inverted: 228, 229, 241;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text-primary: 185, 185, 185;
-    --color-text-secondary: 51, 51, 51;
-    --color-text-inverted: 0, 0, 0;
-    --color-primary: 0, 0, 0;
-    --color-secondary-1: 185, 185, 185;
-    --color-secondary-2: 225, 225, 225;
-    --color-inverted: 42, 39, 42;
-  }
+.dark {
+  --color-text-primary: 185, 185, 185;
+  --color-text-secondary: 51, 51, 51;
+  --color-text-inverted: 0, 0, 0;
+  --color-primary: 0, 0, 0;
+  --color-secondary-1: 185, 185, 185;
+  --color-secondary-2: 225, 225, 225;
+  --color-inverted: 42, 39, 42;
+}
+.rose {
+  --color-text-primary: 245, 245, 245;
+  --color-text-secondary: 255, 230, 217;
+  --color-text-inverted: 255, 81, 89;
+  --color-primary: 255, 0, 0;
+  --color-secondary-1: 255, 255, 255;
+  --color-secondary-2: 215, 215, 215;
+  --color-inverted: 255, 81, 89;
+}
+.purple {
+  --color-text-primary: 255, 255, 255;
+  --color-text-secondary: 199, 210, 254;
+  --color-text-inverted: 79, 70, 229;
+  --color-primary: 67, 56, 202;
+  --color-secondary-1: 255, 255, 255;
+  --color-secondary-2: 238, 242, 255;
+  --color-inverted: 99, 102, 241;
 }
 
 body {

@@ -15,18 +15,19 @@ const config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       textColor: {
-          primary: withOpacity('--color-text-primary'),
-          secondary: withOpacity('--color-text-secondary'),
-          inverted: withOpacity('--color-text-inverted'),
+        primary: withOpacity('--color-text-primary'),
+        secondary: withOpacity('--color-text-secondary'),
+        inverted: withOpacity('--color-text-inverted'),
       },
-      backgroundColor: {        
-          primary: withOpacity('--color-primary'),
-          'secondary-1': withOpacity('--color-secondary-1'),
-          'secondary-2': withOpacity('--color-secondary-2'),
-          inverted: withOpacity('--color-inverted'),      
+      backgroundColor: {
+        primary: withOpacity('--color-primary'),
+        'secondary-1': withOpacity('--color-secondary-1'),
+        'secondary-2': withOpacity('--color-secondary-2'),
+        inverted: withOpacity('--color-inverted'),
       },
       gradientColorStops: {
         skin: {

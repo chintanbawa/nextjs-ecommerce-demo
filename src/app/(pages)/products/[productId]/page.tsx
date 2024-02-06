@@ -34,7 +34,7 @@ const ProductDetails = () => {
   return (
     <Container className="max-w-[800px]">
       {!product ? (
-        <p className="text-center">No Product found.</p>
+        <p className="text-center text-primary">Loading...</p>
       ) : (
         <div className='flex flex-col gap-4'>
           <Image

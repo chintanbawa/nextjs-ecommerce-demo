@@ -26,7 +26,7 @@ const Products = () => {
   return (
     <Container>
       {!products || products.length < 1 ? (
-        <p className="text-center text-primary">No Product found.</p>
+        <p className="text-center text-primary">Loading...</p>
       ) : (
         <div
           style={{

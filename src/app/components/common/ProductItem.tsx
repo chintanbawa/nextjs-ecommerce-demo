@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { HeartIcon } from '@heroicons/react/24/solid'
@@ -25,26 +25,25 @@ const ProductItem = ({
         alt={product.title}
         width={1000}
         height={1000}
-        className='width-100 aspect-square object-contain bg-white p-3'        
+        className='width-100 aspect-square object-contain bg-white p-3'
       />
       <div className="p-2 flex flex-row">
         <div className="flex-1">
           <strong className="text-primary line-clamp-1">
             {product.title}
           </strong>
-          <span className="text-1 line-clamp-2">
+          <span className="text-secondary line-clamp-2">
             {product.description}
           </span>
           <span className="text-primary line-clamp-1">
-          {product.price}
+            {product.price}
           </span>
         </div>
-        { onWishlistClick && (
+        {onWishlistClick && (
           <HeartIcon
-            className={`w-5 h-5 ${
-              isInWishlist ? 'text-inverted' : 'text-primary'
-            }`}
-            onClick={(e)=> {
+            className={`w-5 h-5 ${isInWishlist ? 'text-inverted' : 'text-primary'
+              }`}
+            onClick={(e) => {
               e.stopPropagation()
               setIsInWishlist(!isInWishlist)
               onWishlistClick()
